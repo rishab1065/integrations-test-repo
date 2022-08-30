@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "424e7a1f-8d0b-4faa-ad2f-f457e100bc80",
+		"name": "New Collection Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "651304"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"name\": \"Postmaddn\",\n     \"roles\": [\"Admin\", \"Developer\"]\n}"
+				},
+				"url": {
+					"raw": "https://security-overview-test-app.herokuapp.com/headers-misconfiguration",
+					"protocol": "https",
+					"host": [
+						"security-overview-test-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"headers-misconfiguration"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
