@@ -5,6 +5,8 @@ on: push
 jobs:
   build:
     runs-on: macos-latest
+    env:
+      POSTMAN_API_BASE_URL: 'https://api.getpostman-stage.com'   
     steps:
       - uses: actions/checkout@v3
       - name: Install Postman CLI
@@ -18,6 +20,5 @@ jobs:
         run: postman login --with-api-key ${{secrets.POSTMAN_API_KEY}}
       - name: Run API tests
         run: |
-          export POSTMAN_API_BASE_URL='https://api.getpostman-stage.com'
           # Run your API using Postman CLI
           postman api lint --integration-id=127043
