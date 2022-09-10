@@ -4,12 +4,12 @@ on: push
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
       - name: Install Postman CLI
         run: |
-          curl https://dl-cli.pstmn-stage.io/download/latest/osx_64/ -o postman-cli.tar.gz
+          curl https://dl-cli.pstmn-stage.io/download/latest/windows/ -o postman-cli.tar.gz
           tar -zxvf postman-cli.tar.gz
           sudo mv postman-cli /usr/bin/postman
           rm postman-cli.tar.gz
