@@ -22,3 +22,5 @@ jobs:
         run: |
           # Run your API using Postman CLI
           postman api lint --integration-id=127043
+          echo $env:GITHUB_RUN_ID
+          echo $env:GITHUB_RUN_NUMBER
