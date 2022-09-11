@@ -24,3 +24,4 @@ jobs:
           postman api lint --integration-id=127043
           echo $GITHUB_RUN_ID
           echo $GITHUB_RUN_NUMBER
+          echo $GITHUB_REF_NAME
