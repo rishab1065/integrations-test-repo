@@ -19,7 +19,6 @@ spec:
     tools {nodejs "17.2.0"}
     
       environment {
-        POSTMAN_API_KEY = 'PMAK-6369210265c95500297fb0fb-d309b0b2b73e60ddb8894c2fccd23a7292'
         POSTMAN_API_BASE_URL = 'https://api.getpostman-stage.com'
     }
 
