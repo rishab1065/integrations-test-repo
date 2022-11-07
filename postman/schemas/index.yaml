@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: '1.0.0'
-  title: 'Sample API test bitbucket'
+  title: 'Sample APIsdasdsdasd'
   license:
     name: MIT
 servers:
@@ -66,8 +66,4 @@ components:
         message:
           type: string
   securitySchemes:
-    BasicAuth:
-      type: http
-      scheme: basic
-security:
-  - BasicAuth: []
+    $ref: './scheme.yaml'

@@ -1,0 +1,11 @@
+BasicAuth:
+  type: http
+  scheme: basic
+OAuth2:
+  type: oauth2
+  flows:
+    clientCredentials:
+      scopes:
+        read: read object
+        write: writes objectfsdf
+      tokenUrl: http://test.com
