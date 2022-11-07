@@ -39,7 +39,7 @@ spec:
     stage('Running api linting') {
       steps {
         git branch: 'main', url: 'https://github.com/rishab1065/integrations-test-repo/'
-        sh 'postman api lint --integration-id 133643'
+        sh 'postman api lint --integration-id 133644'
       }
     }
   }
